@@ -1,3 +1,7 @@
+const gridStyles=document.createElement('link');
+gridStyles.rel='stylesheet';
+gridStyles.href='assets/products-grid.css';
+document.head.appendChild(gridStyles);
 const header=document.querySelector('.site-header');
 const menuButton=document.querySelector('.menu-button');
 const mobileMenu=document.querySelector('#mobile-menu');
