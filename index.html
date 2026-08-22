@@ -1,325 +1,108 @@
 <!doctype html>
-<html lang="pt-BR" data-theme="dark">
+<html lang="pt-BR">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0A0A0A">
-  <meta name="color-scheme" content="dark">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#07111f">
+  <meta name="color-scheme" content="dark light">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
   <meta name="google-site-verification" content="1lDQYG9RvKdH-c44b3ez2ZL33xb7k187rBthK93nfTE">
-
-  <title>Buildea — Ideas, Built.</title>
-  <meta name="description" content="A Buildea projeta, constrói e opera produtos digitais próprios, incluindo SignallQ e Savro.">
+  <title>Buildeas — Ideias que constroem soluções</title>
+  <meta name="description" content="A Buildeas transforma ideias em produtos digitais simples, úteis e bem construídos. Conheça SignallQ, Linka, NDS, Auê e outros projetos do laboratório.">
   <link rel="canonical" href="https://buildea-labs.github.io/">
-  <link rel="sitemap" type="application/xml" href="https://buildea-labs.github.io/sitemap.xml">
-  <link rel="icon" type="image/svg+xml" href="assets/buildea-icon-dark.svg">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-
+  <link rel="icon" type="image/svg+xml" href="assets/buildeas-mark.svg">
+  <link rel="stylesheet" href="assets/buildeas.css">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
-  <meta property="og:site_name" content="Buildea">
-  <meta property="og:title" content="Buildea — Ideas, Built.">
-  <meta property="og:description" content="A Buildea projeta, constrói e opera produtos digitais próprios, incluindo SignallQ e Savro.">
+  <meta property="og:site_name" content="Buildeas">
+  <meta property="og:title" content="Buildeas — Ideias que constroem soluções">
+  <meta property="og:description" content="Ideias saem do papel. Produtos ganham forma. Soluções chegam às pessoas.">
   <meta property="og:url" content="https://buildea-labs.github.io/">
-  <meta property="og:image" content="https://buildea-labs.github.io/assets/og-buildea.png">
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Buildea — Ideas, Built.">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Buildea — Ideas, Built.">
-  <meta name="twitter:description" content="A Buildea projeta, constrói e opera produtos digitais próprios, incluindo SignallQ e Savro.">
-  <meta name="twitter:image" content="https://buildea-labs.github.io/assets/og-buildea.png">
-  <meta name="twitter:image:alt" content="Buildea — Ideas, Built.">
-
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Buildeas — Ideias que constroem soluções">
+  <meta name="twitter:description" content="Ideias saem do papel. Produtos ganham forma. Soluções chegam às pessoas.">
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": "https://buildea-labs.github.io/#website",
-        "url": "https://buildea-labs.github.io/",
-        "name": "Buildea",
-        "alternateName": "Buildea Labs",
-        "inLanguage": "pt-BR",
-        "publisher": {"@id": "https://buildea-labs.github.io/#organization"}
-      },
-      {
-        "@type": "Organization",
-        "@id": "https://buildea-labs.github.io/#organization",
-        "name": "Buildea",
-        "alternateName": "Buildea Labs",
-        "url": "https://buildea-labs.github.io/",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://buildea-labs.github.io/assets/buildea-logo-dark-transparent.png"
-        },
-        "description": "A Buildea projeta, constrói e opera produtos digitais próprios, incluindo SignallQ e Savro.",
-        "foundingLocation": {"@type": "Place", "name": "Rio de Janeiro, Brasil"},
-        "sameAs": [
-          "https://github.com/buildea-labs",
-          "https://signallq.pages.dev/"
-        ],
-        "brand": [
-          {"@type": "Brand", "name": "SignallQ", "url": "https://signallq.pages.dev/"},
-          {"@type": "Brand", "name": "Savro"},
-          {"@type": "Brand", "name": "20Testers", "url": "https://20testers.com.br"}
-        ]
-      }
+    "@context":"https://schema.org",
+    "@graph":[
+      {"@type":"WebSite","@id":"https://buildea-labs.github.io/#website","url":"https://buildea-labs.github.io/","name":"Buildeas","inLanguage":"pt-BR","publisher":{"@id":"https://buildea-labs.github.io/#organization"}},
+      {"@type":"Organization","@id":"https://buildea-labs.github.io/#organization","name":"Buildeas","alternateName":"Buildeas Labs","url":"https://buildea-labs.github.io/","logo":"https://buildea-labs.github.io/assets/buildeas-mark.svg","description":"Laboratório de produtos digitais que transforma ideias em soluções simples, úteis e bem construídas.","foundingLocation":{"@type":"Place","name":"Rio de Janeiro, Brasil"},"sameAs":["https://github.com/buildea-labs"]}
     ]
   }
   </script>
-
-  <style>
-    :root{
-      --bg:#0A0A0A;--surface:#0C0C0C;
-      --text:#FFFFFF;--muted:#A8A8A8;--faint:#8A8A8A;
-      --border:rgba(255,255,255,.08);
-      --accent:#FFD400;
-      --beta:#FFBD2E;--dev:#FF5F56;--ok:#27C93F;
-      --font-sans:"Sora","Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-      --font-mono:"Geist Mono","SFMono-Regular",Consolas,monospace;
-      --radius-xs:6px;--radius-sm:10px;--radius-md:14px;
-    }
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font-sans);min-height:100vh;overflow-x:hidden}
-    a{color:inherit;text-decoration:none}
-    h1,h2,h3,p{margin:0}
-
-    header{display:flex;align-items:center;justify-content:space-between;padding:0 24px;height:64px;border-bottom:1px solid var(--border);position:sticky;top:0;background:var(--bg);z-index:50}
-    header img.wordmark{height:20px}
-    nav.primary-nav{display:flex;gap:28px}
-    nav.primary-nav a{color:#D0D0D0;font-size:14px}
-    nav.primary-nav a:hover{color:var(--text)}
-    .header-cta{display:flex;align-items:center;gap:8px;color:var(--text);border-radius:var(--radius-sm);padding:0 16px;height:36px;font-size:14px;font-weight:600}
-    .menu-btn{display:none;background:none;border:none;color:var(--text);font-size:22px;cursor:pointer;padding:4px}
-
-    .mobile-menu{display:none;position:fixed;inset:0;background:var(--bg);z-index:60;flex-direction:column;padding:24px}
-    .mobile-menu.open{display:flex}
-    .mobile-menu-close{align-self:flex-end;background:none;border:none;color:var(--text);font-size:20px;cursor:pointer}
-    .mobile-menu nav{display:flex;flex-direction:column;gap:20px;margin-top:32px}
-    .mobile-menu nav a{color:var(--text);font-size:22px;font-weight:600}
-
-    .hero{max-width:900px;margin:0 auto;padding:88px 24px 40px}
-    .hero h1{font-family:var(--font-mono);font-size:clamp(2rem,4.2vw,3.25rem);line-height:1.25;font-weight:700;letter-spacing:-.01em;margin:0 0 24px}
-    .hero p{font-size:17px;line-height:1.6;color:var(--muted);max-width:620px}
-
-    .terminal-section{max-width:900px;margin:0 auto;padding:0 24px 96px}
-    .terminal{border:1px solid var(--border);border-radius:var(--radius-md);overflow:hidden;background:var(--surface)}
-    .terminal-bar{display:flex;align-items:center;gap:8px;padding:10px 14px;border-bottom:1px solid var(--border)}
-    .terminal-bar .dot{width:11px;height:11px;border-radius:50%}
-    .terminal-bar .dot.red{background:#FF5F56}
-    .terminal-bar .dot.yellow{background:#FFBD2E}
-    .terminal-bar .dot.green{background:#27C93F}
-    .terminal-bar span.label{font-family:var(--font-mono);font-size:12px;color:var(--faint);margin-left:8px}
-    .terminal-body{padding:20px;font-family:var(--font-mono);font-size:14px;line-height:1.8;min-height:96px}
-    .terminal-body .prompt{color:var(--muted)}
-    .terminal-body .typed{color:var(--text)}
-    .ps-cursor{color:var(--accent);animation:ps-blink 1s step-end infinite}
-    @keyframes ps-blink{0%,49%{opacity:1}50%,100%{opacity:0}}
-    .terminal-output{color:var(--ok);margin-top:6px;opacity:0;transition:opacity .2s}
-    .terminal-output.show{opacity:1}
-
-    section.block{max-width:900px;margin:0 auto;padding:0 24px 96px;display:flex;flex-direction:column;gap:32px}
-    section.block h2{font-family:var(--font-mono);font-size:22px;font-weight:700}
-
-    .products-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:var(--radius-md);overflow:hidden}
-    .product-cell{background:var(--bg);padding:24px;display:flex;flex-direction:column;gap:8px}
-    .product-cell .row{display:flex;align-items:center;justify-content:space-between;gap:10px}
-    .product-cell h3{font-family:var(--font-mono);font-size:15px;font-weight:700}
-    .badge{font-family:var(--font-mono);font-size:11px;font-weight:700;text-transform:uppercase;border-radius:var(--radius-xs);padding:2px 8px;border:1px solid}
-    .badge.beta{color:var(--beta);border-color:var(--beta)}
-    .badge.dev{color:var(--dev);border-color:var(--dev)}
-    .badge.ok{color:var(--ok);border-color:var(--ok)}
-    .product-cell p{font-size:14px;line-height:1.6;color:var(--muted)}
-
-    .principles-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:var(--radius-md);overflow:hidden}
-    .principle{background:var(--bg);padding:20px;display:flex;flex-direction:column;gap:6px}
-    .principle h3{font-size:14px;font-weight:700}
-    .principle p{font-size:13px;line-height:1.55;color:var(--muted)}
-
-    .faq{max-width:700px;margin:0 auto;padding:0 24px 96px;display:flex;flex-direction:column;gap:4px}
-    .faq h2{font-family:var(--font-mono);font-size:22px;font-weight:700;margin:0 0 16px}
-    .faq-item{border-bottom:1px solid var(--border)}
-    .faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;padding:16px 0;cursor:pointer;background:none;border:none;color:var(--text);font-family:var(--font-sans);text-align:left}
-    .faq-q span.title{font-size:15px;font-weight:600}
-    .faq-q span.sign{color:var(--faint);font-size:16px}
-    .faq-a{margin:0 0 16px;font-size:14px;line-height:1.65;color:var(--muted);display:none}
-    .faq-item.open .faq-a{display:block}
-    .faq-a a{color:var(--accent)}
-
-    footer{border-top:1px solid var(--border);padding:28px 24px;display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--faint);flex-wrap:wrap;gap:16px}
-    footer nav{display:flex;gap:20px;flex-wrap:wrap}
-    footer nav a{color:var(--faint)}
-    footer nav a:hover{color:var(--text)}
-
-    @media(max-width:760px){
-      nav.primary-nav,.header-cta{display:none}
-      .menu-btn{display:block}
-      .hero{padding:56px 20px 32px}
-      .terminal-section,section.block,.faq{padding-left:20px;padding-right:20px}
-      .products-grid,.principles-grid{grid-template-columns:1fr}
-    }
-    @media(prefers-reduced-motion:reduce){
-      html{scroll-behavior:auto}
-      .ps-cursor{animation:none}
-    }
-  </style>
 </head>
 <body>
-  <header>
-    <a href="#inicio"><img class="wordmark" src="assets/buildea-wordmark-dark.svg" alt="Buildea"></a>
-    <nav class="primary-nav">
-      <a href="#produtos">Produtos</a>
-      <a href="#principios">Princípios</a>
-      <a href="#faq">FAQ</a>
-    </nav>
-    <a class="header-cta" href="https://github.com/buildea-labs" target="_blank" rel="noreferrer">GitHub</a>
-    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header" id="topo">
+    <div class="nav-shell">
+      <a class="brand" href="#inicio" aria-label="Buildeas, início"><img src="assets/buildeas-wordmark.svg" alt="Buildeas"></a>
+      <nav class="desktop-nav" aria-label="Navegação principal">
+        <a href="#sobre">Sobre</a><a href="#fazemos">O que fazemos</a><a href="#projetos">Projetos</a><a href="#metodo">Como construímos</a>
+      </nav>
+      <a class="nav-cta" href="https://github.com/buildea-labs" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" hidden><nav aria-label="Navegação móvel"><a href="#sobre">Sobre</a><a href="#fazemos">O que fazemos</a><a href="#projetos">Projetos</a><a href="#metodo">Como construímos</a><a href="https://github.com/buildea-labs" target="_blank" rel="noreferrer">GitHub ↗</a></nav></div>
   </header>
-
-  <div class="mobile-menu" id="mobileMenu">
-    <button class="mobile-menu-close" id="menuClose" aria-label="Fechar menu">✕</button>
-    <nav>
-      <a href="#produtos">Produtos</a>
-      <a href="#principios">Princípios</a>
-      <a href="#faq">FAQ</a>
-      <a href="https://github.com/buildea-labs" target="_blank" rel="noreferrer">GitHub</a>
-    </nav>
-  </div>
-
-  <main>
+  <main id="conteudo">
     <section class="hero" id="inicio">
-      <h1>Buildea projeta, constrói e opera produtos digitais.</h1>
-      <p>Da ideia ao produto.</p>
-    </section>
-
-    <section class="terminal-section">
-      <div class="terminal">
-        <div class="terminal-bar">
-          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-          <span class="label">Windows PowerShell</span>
+      <div class="hero-orbit hero-orbit-a" aria-hidden="true"></div><div class="hero-orbit hero-orbit-b" aria-hidden="true"></div><div class="hero-grid" aria-hidden="true"></div>
+      <div class="container hero-layout">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Buildeas Labs · Rio de Janeiro</p>
+          <h1>Ideias que <span>constroem</span><br>soluções reais.</h1>
+          <p class="hero-lead">Transformamos problemas, curiosidades e boas ideias em produtos digitais simples, úteis e capazes de funcionar no mundo real.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#projetos">Conheça os projetos <span aria-hidden="true">→</span></a><a class="button button-ghost" href="#sobre">Conheça a Buildeas</a></div>
+          <div class="hero-proof" aria-label="Princípios da Buildeas"><span>Produto primeiro</span><span>Simples de usar</span><span>Construção contínua</span></div>
         </div>
-        <div class="terminal-body">
-          <div><span class="prompt">PS C:\Users\buildea&gt; </span><span class="typed" id="typed"></span><span class="ps-cursor">▊</span></div>
-          <div class="terminal-output" id="terminalOutput">✓ Organização Buildea no GitHub.</div>
-        </div>
-      </div>
-    </section>
-
-    <section class="block" id="produtos">
-      <h2>Produtos</h2>
-      <div class="products-grid">
-        <div class="product-cell">
-          <div class="row">
-            <h3>20Testers</h3>
-            <span class="badge ok">Em produção</span>
+        <div class="hero-art reveal" aria-hidden="true">
+          <div class="idea-core">
+            <svg viewBox="0 0 320 380"><defs><linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffbf1b"/><stop offset="1" stop-color="#f29100"/></linearGradient><filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="12" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><path d="M72 18h56v116c0 25 13 38 32 44v66c-52-12-88-57-88-112V18Z" fill="#f5f7fa"/><path d="M128 134c20-34 59-52 96-42 43 12 71 52 65 96-5 40-32 69-65 79v-64c10-8 17-20 17-34 0-24-19-43-43-43-24 0-43 19-43 43 0 14 7 27 17 35v63c-17-4-31-12-44-23Z" fill="url(#gold)"/><path d="M154 173c0-25 20-45 45-45s45 20 45 45c0 18-10 33-26 41v54h-38v-54c-16-8-26-23-26-41Z" fill="#07111f"/><rect x="179" y="280" width="40" height="10" rx="5" fill="#ffb000" filter="url(#glow)"/><rect x="179" y="298" width="40" height="10" rx="5" fill="#ffb000"/><rect x="184" y="316" width="30" height="10" rx="5" fill="#ffb000"/></svg>
+            <div class="core-shadow"></div>
           </div>
-          <p>Rede de testadores para aplicativos Android. Cumpra os requisitos da Play Store com facilidade.</p>
-        </div>
-        <div class="product-cell">
-          <div class="row">
-            <h3>SignallQ</h3>
-            <span class="badge beta">Em teste</span>
-          </div>
-          <p>Descubra por que sua internet está lenta e resolva em minutos, sem precisar entender de rede.</p>
-        </div>
-        <div class="product-cell">
-          <div class="row">
-            <h3>Savro</h3>
-            <span class="badge dev">Em construção</span>
-          </div>
-          <p>Controle financeiro com privacidade real: seus dados nunca saem do seu controle.</p>
+          <div class="floating-chip chip-a">IDEIA</div><div class="floating-chip chip-b">PRODUTO</div><div class="floating-chip chip-c">IMPACTO</div>
         </div>
       </div>
     </section>
-
-    <section class="block" id="principios">
-      <h2>Como trabalhamos</h2>
-      <div class="principles-grid">
-        <div class="principle"><h3>Clareza</h3><p>Marcante, nunca à custa de compreensão.</p></div>
-        <div class="principle"><h3>Sem clichê</h3><p>Sem robôs, sem circuitos genéricos.</p></div>
-        <div class="principle"><h3>Poucos elementos</h3><p>Bem executados, nada de excesso.</p></div>
-        <div class="principle"><h3>Movimento com propósito</h3><p>Transição, profundidade, relação.</p></div>
+    <section class="section section-light" id="sobre">
+      <div class="container split-intro">
+        <div class="section-heading reveal"><p class="eyebrow eyebrow-dark">Nossa essência</p><h2>Construir bem antes de <span>parecer grande.</span></h2></div>
+        <div class="intro-copy reveal"><p>A Buildeas é um laboratório de produtos digitais. A gente observa problemas reais, testa ideias, constrói protótipos e evolui o que demonstra valor.</p><p>Não existe tecnologia por esporte. O objetivo é transformar complexidade em experiências que façam sentido para quem usa.</p></div>
+      </div>
+      <div class="container values-grid" id="fazemos">
+        <article class="value-card reveal"><div class="icon-box" aria-hidden="true">✦</div><p class="card-index">01</p><h3>Ideias</h3><p>Encontramos oportunidades em problemas que normalmente parecem pequenos demais para virar produto.</p></article>
+        <article class="value-card reveal"><div class="icon-box" aria-hidden="true">⌘</div><p class="card-index">02</p><h3>Produto</h3><p>Transformamos conceitos em experiências claras, com foco no que a pessoa realmente precisa fazer.</p></article>
+        <article class="value-card reveal"><div class="icon-box" aria-hidden="true">&lt;/&gt;</div><p class="card-index">03</p><h3>Tecnologia</h3><p>Escolhemos tecnologia pelo problema que ela resolve, priorizando eficiência, simplicidade e custo sustentável.</p></article>
+        <article class="value-card reveal"><div class="icon-box" aria-hidden="true">◎</div><p class="card-index">04</p><h3>Evolução</h3><p>Produto nunca termina. Medimos, aprendemos, cortamos excessos e melhoramos o que realmente importa.</p></article>
       </div>
     </section>
-
-    <section class="faq" id="faq">
-      <h2>FAQ</h2>
-      <div class="faq-item">
-        <button class="faq-q" data-faq><span class="title">O que é a Buildea?</span><span class="sign">+</span></button>
-        <p class="faq-a">Um laboratório de produto que constrói e opera seus próprios produtos digitais, da ideia ao código.</p>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" data-faq><span class="title">A Buildea presta serviço sob demanda?</span><span class="sign">+</span></button>
-        <p class="faq-a">Ainda não. Hoje nosso foco é 100% construir e operar produtos próprios — mas é um caminho que pode se abrir conforme a Buildea cresce.</p>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" data-faq><span class="title">Como entro em contato?</span><span class="sign">+</span></button>
-        <p class="faq-a">Envie um e-mail para <a href="mailto:buildealabs@gmail.com">buildealabs@gmail.com</a>.</p>
+    <section class="section projects-section" id="projetos">
+      <div class="container projects-header reveal"><div><p class="eyebrow">Projetos</p><h2>Produtos que já saíram da <span>cabeça</span> e foram pra rua.</h2></div><a class="text-link" href="https://github.com/buildea-labs" target="_blank" rel="noreferrer">Ver organização no GitHub <span aria-hidden="true">↗</span></a></div>
+      <div class="container projects-grid">
+        <article class="project-card project-signallq reveal"><div class="project-topline"><span>Internet & telecom</span><span class="project-status">Em evolução</span></div><div class="project-brand">SignallQ</div><h3>Internet complicada, explicada de um jeito simples.</h3><p>Medição, diagnóstico e recomendação para ajudar pessoas a entenderem sua conexão sem precisar falar “tecniquês”.</p><a href="https://signallq.com" target="_blank" rel="noreferrer">Conhecer projeto <span aria-hidden="true">→</span></a><div class="project-visual signal-visual" aria-hidden="true"><div class="speed-ring"><b>642</b><small>Mbps</small></div><div class="signal-bars"><i></i><i></i><i></i><i></i></div></div></article>
+        <article class="project-card project-linka reveal"><div class="project-topline"><span>Apple & conectividade</span><span class="project-status">Em construção</span></div><div class="project-brand project-brand-light">linka</div><h3>Um speedtest que mede muito e fala pouco.</h3><p>Experiência minimalista, rápida e visualmente integrada ao ecossistema Apple.</p><span class="project-coming">Produto em desenvolvimento</span><div class="project-visual linka-visual" aria-hidden="true"><div class="linka-phone"><div class="mini-notch"></div><div class="mini-ring"><span>850</span></div></div></div></article>
+        <article class="project-card project-nds reveal"><div class="project-topline"><span>Infraestrutura & diagnóstico</span><span class="project-status">Core tecnológico</span></div><div class="project-brand project-brand-nds">NDS</div><h3>Diagnóstico de rede como capacidade, não como tela.</h3><p>Motor agnóstico pensado para medir, interpretar e entregar diagnóstico para produtos, apps e operações de telecom.</p><span class="project-coming">Produto de plataforma</span><div class="project-visual nds-visual" aria-hidden="true"><div class="node n1"></div><div class="node n2"></div><div class="node n3"></div><div class="node n4"></div><svg viewBox="0 0 280 150"><path d="M35 92 98 50l62 42 78-52M98 50l18 78 44-36 78 28"/></svg></div></article>
+        <article class="project-card project-aue reveal"><div class="project-topline"><span>Games & entretenimento</span><span class="project-status">Experimento</span></div><div class="project-brand project-brand-aue">Auê!</div><h3>Porque até um arroto pode virar produto.</h3><p>Experimento social de competição, pontuação e desafios. Tecnologia séria aplicada a uma ideia completamente sem cerimônia.</p><span class="project-coming">Projeto experimental</span><div class="project-visual aue-visual" aria-hidden="true"><div class="score">92<small>AUÊ SCORE</small></div></div></article>
       </div>
     </section>
+    <section class="section section-light method-section" id="metodo">
+      <div class="container method-layout">
+        <div class="method-copy reveal"><p class="eyebrow eyebrow-dark">Como construímos</p><h2>Menos cerimônia.<br><span>Mais produto funcionando.</span></h2><p>A Buildeas trabalha em ciclos curtos: entender, decidir, construir, testar e ajustar. A documentação ajuda. O processo ajuda. Mas nenhum deles pode virar desculpa para não entregar.</p></div>
+        <ol class="method-steps"><li class="reveal"><span>01</span><div><h3>Entender</h3><p>Qual problema existe de verdade e para quem ele importa?</p></div></li><li class="reveal"><span>02</span><div><h3>Recortar</h3><p>Qual é a menor solução que já consegue provar valor?</p></div></li><li class="reveal"><span>03</span><div><h3>Construir</h3><p>Produto real, não apresentação eterna sobre um produto futuro.</p></div></li><li class="reveal"><span>04</span><div><h3>Aprender</h3><p>Uso, feedback e dados decidem o que evolui e o que sai fora.</p></div></li></ol>
+      </div>
+    </section>
+    <section class="section manifesto-section"><div class="container manifesto reveal"><div class="manifesto-mark"><img src="assets/buildeas-mark.svg" alt="" aria-hidden="true"></div><div><p class="eyebrow">Buildeas</p><h2>Não queremos parecer uma fábrica de software.<br><span>Queremos ser uma fábrica de boas soluções.</span></h2></div></div></section>
+    <section class="cta-section"><div class="container cta-card reveal"><div><p class="eyebrow">Explore</p><h2>Tem uma ideia?<br><span>Construa a primeira versão.</span></h2><p>Veja os projetos, acompanhe a evolução e conheça o código público da organização.</p></div><div class="cta-actions"><a class="button button-primary" href="https://github.com/buildea-labs" target="_blank" rel="noreferrer">Abrir GitHub <span aria-hidden="true">↗</span></a><a class="button button-ghost" href="#projetos">Ver projetos</a></div></div></section>
   </main>
-
-  <footer>
-    <span>©2026 Buildea</span>
-    <nav>
-      <a href="https://github.com/buildea-labs" target="_blank" rel="noreferrer">GitHub</a>
-      <a href="mailto:buildealabs@gmail.com">Contato</a>
-      <a href="privacy.html">Privacidade</a>
-      <a href="terms.html">Termos</a>
-    </nav>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><img src="assets/buildeas-wordmark.svg" alt="Buildeas"><p>Ideias que constroem soluções.</p></div>
+      <div class="footer-col"><h3>Navegação</h3><a href="#sobre">Sobre</a><a href="#fazemos">O que fazemos</a><a href="#projetos">Projetos</a><a href="#metodo">Como construímos</a></div>
+      <div class="footer-col"><h3>Organização</h3><a href="https://github.com/buildea-labs" target="_blank" rel="noreferrer">GitHub ↗</a><a href="privacy.html">Privacidade</a><a href="terms.html">Termos</a></div>
+      <div class="footer-note"><span class="status-dot"></span><p>Construindo do Rio de Janeiro para a internet.</p></div>
+    </div>
+    <div class="container footer-bottom"><p>© <span id="year"></span> Buildeas. Todos os direitos reservados.</p><a href="#topo">Voltar ao topo ↑</a></div>
   </footer>
-
-  <script>
-    const menuBtn = document.getElementById('menuBtn');
-    const menuClose = document.getElementById('menuClose');
-    const mobileMenu = document.getElementById('mobileMenu');
-    menuBtn.addEventListener('click', () => { mobileMenu.classList.add('open'); menuBtn.setAttribute('aria-expanded', 'true'); });
-    menuClose.addEventListener('click', () => { mobileMenu.classList.remove('open'); menuBtn.setAttribute('aria-expanded', 'false'); });
-    mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-      mobileMenu.classList.remove('open'); menuBtn.setAttribute('aria-expanded', 'false');
-    }));
-
-    document.querySelectorAll('[data-faq]').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const item = btn.closest('.faq-item');
-        const wasOpen = item.classList.contains('open');
-        document.querySelectorAll('.faq-item.open').forEach(el => {
-          el.classList.remove('open');
-          el.querySelector('.sign').textContent = '+';
-        });
-        if (!wasOpen) {
-          item.classList.add('open');
-          btn.querySelector('.sign').textContent = '−';
-        }
-      });
-    });
-
-    const command = 'git clone https://github.com/buildea-labs';
-    const typedEl = document.getElementById('typed');
-    const outputEl = document.getElementById('terminalOutput');
-    let i = 0;
-    const prefersReduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (prefersReduced) {
-      typedEl.textContent = command;
-      outputEl.classList.add('show');
-    } else {
-      const type = setInterval(() => {
-        i++;
-        typedEl.textContent = command.slice(0, i);
-        if (i >= command.length) {
-          clearInterval(type);
-          outputEl.classList.add('show');
-        }
-      }, 55);
-    }
-  </script>
+  <script src="assets/buildeas.js" defer></script>
 </body>
 </html>
